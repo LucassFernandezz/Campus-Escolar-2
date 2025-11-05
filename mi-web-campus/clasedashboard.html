@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase - Campus ET36</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <span class="material-icons" onclick="window.history.back()" style="cursor:pointer;">arrow_back</span>
+        <div class="header-logo">
+            <img src="imagenes/LogoEt36.png" alt="Campus ET36 Logo">
+            <span id="materiaNombre">Clase</span>
+        </div>
+    </header>
+
+    <main class="main-content" style="padding: 30px;">
+        <h1 id="tituloClase"></h1>
+
+    <!-- Sección de Comunicados / Tareas -->
+        <section id="comunicadosSection">
+            <h2>Comunicados / Tareas</h2>
+            <div id="listaComunicados">
+                <p>Cargando tareas y comunicados...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Campus ET36 © 2025</p>
+    </footer>
+
+    <script>
+        // Mostrar el nombre de la materia desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const materia = params.get('materia');
+        document.getElementById('tituloClase').textContent = materia || 'Clase sin nombre';
+        document.getElementById('materiaNombre').textContent = materia || 'Clase';
+    </script>
+    <script src="./clasedashboard.js"></script>
+
+</body>
+</html>

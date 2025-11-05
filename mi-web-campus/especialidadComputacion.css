@@ -1,0 +1,103 @@
+/* ===========================
+   Especialidad Computación CSS
+   =========================== */
+
+.tabla-container {
+    max-width: 95%;
+    margin: 100px auto 50px auto;
+    text-align: center;
+}
+
+.tabla-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #000000; /* negro */
+    text-transform: uppercase;
+}
+
+.tabla-scroll {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ======== Tabla ======== */
+.plan-estudios-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    color: #000000; /* texto negro */
+}
+
+.plan-estudios-table th,
+.plan-estudios-table td {
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+/* Encabezado */
+.plan-estudios-table th {
+    background-color: #e65100; /* naranja oscuro */
+    color: #000000; /* texto negro */
+    font-weight: bold;
+}
+
+/* Campo de formación */
+.plan-estudios-table .campo-formacion {
+    font-weight: bold;
+    background-color: #ffcc80; /* naranja claro complementario */
+    color: #000000;
+}
+
+/* Filas pares */
+.plan-estudios-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover fila */
+.plan-estudios-table tr:hover {
+    background-color: #ffe0b2;
+    transition: background-color 0.3s ease;
+}
+
+/* Fila totales */
+.plan-estudios-table .totales-row td {
+    background-color: #ffb74d;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* ===== Footer fijo al fondo ===== */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Esto hace que main ocupe todo el espacio disponible */
+}
+
+/* Mantener footer estilo existente */
+footer {
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .plan-estudios-table th, 
+    .plan-estudios-table td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    .tabla-container h1 {
+        font-size: 1.5em;
+    }
+}
