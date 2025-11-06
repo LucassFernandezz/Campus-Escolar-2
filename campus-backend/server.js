@@ -4,6 +4,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors'); // Para permitir comunicación entre frontend y backend
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 5000; // El puerto en el que correrá tu servidor
@@ -32,6 +33,12 @@ app.use('/api/auth', require('./routes/authRoutes'));
 // Rutas para comunicados
 const comunicadosRoutes = require('./routes/comunicados'); // Importa las rutas de comunicados
 app.use('/api/comunicados', comunicadosRoutes); // Usa las rutas de comunicados en el path /api/comunicados
+
+// servir uploads como estáticos
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// usar rutas de submissions
+app.use('/api/submissions', require('./routes/submissions'));
 
 // --- Iniciar el servidor ---
 app.listen(PORT, () => {

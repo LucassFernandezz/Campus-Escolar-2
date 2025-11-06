@@ -19,3 +19,11 @@ DNI (Sin puntos): 12312312
 Rol: estudiante
 Código de Alumno: codigo_para_estudiantes
 
+Familia1:
+Nombre: Familia 1
+Email: familia@gmail.com
+Contraseña: familia123
+Confirmar Contraseña: familia123
+DNI (Sin puntos): 12432233
+Rol: familia
+Código de Alumno: codigo_para_familias
