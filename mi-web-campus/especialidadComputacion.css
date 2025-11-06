@@ -101,3 +101,14 @@ footer {
         font-size: 1.5em;
     }
 }
+
+/* Nuevos colores para campos */
+.campo-formacion.fte {
+    background-color: #ffcc80; /* naranja claro */
+    font-weight: bold;
+}
+
+.campo-formacion.ftv {
+    background-color: #ffe082; /* amarillo claro */
+    font-weight: bold;
+}

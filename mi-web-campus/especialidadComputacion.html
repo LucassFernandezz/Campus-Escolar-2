@@ -1,93 +1,312 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Especialidad Computación - Campus ET36</title>
-    <link rel="stylesheet" href="estilos.css"> <!-- CSS global primero -->
-    <link rel="stylesheet" href="especialidadComputacion.css"> <!-- CSS específico -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Especialidad Computación - Campus ET36 (Extenso)</title>
+  <link rel="stylesheet" href="estilos.css"> <!-- global -->
+  <link rel="stylesheet" href="especialidadComputacion_extensa.css"> <!-- específico -->
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-<header>
+  <header>
     <nav class="navbar">
-        <a href="index.html" class="logo-link">
-            <div class="logo">
-                <img src="imagenes/LogoET36.png" alt="Campus ET36 Logo">
-                <span>Campus ET36</span>
-            </div>
-        </a>
-        <ul class="nav-links">
-            <li><a href="inicioRegistro.html">Iniciar/Registrarse sesión</a></li>
-            <li><a href="especialidades.html" class="active">Especialidades</a></li>
-            <li><a href="inscripciones.html">Inscripciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <a href="index.html" class="logo-link">
+        <div class="logo">
+          <img src="imagenes/LogoET36.png" alt="Campus ET36 Logo">
+          <span>Campus ET36</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="inicioRegistro.html">Iniciar/Registrarse sesion</a></li>
+        <li><a href="especialidades.html" class="active">Especialidades</a></li>
+        <li><a href="inscripciones.html">Inscripciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<main class="tabla-container">
-    <h1>Plan de Estudios - Especialidad en Computación</h1>
+  <main class="padding-for-fixed-header">
+    <section class="tabla-container">
+      <h1>Plan de Estudios - Especialidad en Computación (Extenso)</h1>
 
-    <div class="tabla-scroll">
+      <div class="tabla-scroll">
         <table class="plan-estudios-table">
-            <thead>
-                <tr>
-                    <th>Año</th>
-                    <th>Campo de Formación</th>
-                    <th>Espacio Curricular</th>
-                    <th>Carga Horaria Semanal</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>4°</td>
-                    <td class="campo-formacion">Formación Técnica Específica</td>
-                    <td>Programación Estructurada</td>
-                    <td>6 hs</td>
-                </tr>
-                <tr>
-                    <td>4°</td>
-                    <td class="campo-formacion">Formación Técnica Específica</td>
-                    <td>Base de Datos</td>
-                    <td>4 hs</td>
-                </tr>
-                <tr>
-                    <td>5°</td>
-                    <td class="campo-formacion">Formación Técnica Específica</td>
-                    <td>Análisis de Sistemas</td>
-                    <td>6 hs</td>
-                </tr>
-                <tr>
-                    <td>5°</td>
-                    <td class="campo-formacion">Formación Técnica Específica</td>
-                    <td>Programación Orientada a Objetos</td>
-                    <td>6 hs</td>
-                </tr>
-                <tr>
-                    <td>6°</td>
-                    <td class="campo-formacion">Formación Técnica Específica</td>
-                    <td>Redes y Sistemas de Redes</td>
-                    <td>4 hs</td>
-                </tr>
-                <tr>
-                    <td>6°</td>
-                    <td class="campo-formacion">Formación Técnica Específica</td>
-                    <td>Organización de las Computadoras</td>
-                    <td>3 hs</td>
-                </tr>
-                <tr class="totales-row">
-                    <td colspan="3">Total de Horas Semanales</td>
-                    <td>29 hs</td>
-                </tr>
-            </tbody>
+          <thead>
+            <tr>
+              <th rowspan="3">Campo de Formación</th>
+              <th rowspan="3">Unidades Curriculares</th>
+              <th colspan="6" class="header-years">Años</th>
+              <th colspan="2" class="header-totals">Horas totales</th>
+            </tr>
+            <tr>
+              <th>1°</th>
+              <th>2°</th>
+              <th>3°</th>
+              <th>4°</th>
+              <th>5°</th>
+              <th>6°</th>
+              <th>Horas cátedra por UC</th>
+              <th>Horas reloj por UC</th>
+            </tr>
+            <tr>
+              <th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- --------------- GENERAL / BÁSICA --------------- -->
+            <tr class="campo-row">
+              <td rowspan="6" class="campo-formacion">General / Básica</td>
+              <td>Lengua y Literatura</td>
+              <td>4</td><td>3</td><td>3</td><td>3</td><td></td><td></td>
+              <td>13</td><td>312</td>
+            </tr>
+            <tr>
+              <td>Matemática</td>
+              <td>4</td><td>4</td><td>4</td><td>3</td><td></td><td></td>
+              <td>15</td><td>360</td>
+            </tr>
+            <tr>
+              <td>Inglés / Inglés Técnico</td>
+              <td>2</td><td>2</td><td>3</td><td>3</td><td></td><td></td>
+              <td>10</td><td>240</td>
+            </tr>
+            <tr>
+              <td>Historia / Geografía</td>
+              <td>3</td><td>3</td><td></td><td></td><td></td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Educación Física</td>
+              <td>2</td><td>2</td><td>2</td><td>2</td><td></td><td></td>
+              <td>8</td><td>192</td>
+            </tr>
+            <tr>
+              <td>Ciudadanía y Trabajo / Formación Ética</td>
+              <td></td><td></td><td></td><td>2</td><td>2</td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+
+            <!-- --------------- CIENCIA Y TECNOLOGÍA --------------- -->
+            <tr>
+              <td class="campo-formacion">Ciencia y Tecnología</td>
+              <td>Ciencia y Tecnología (integrada)</td>
+              <td></td><td>2</td><td>2</td><td></td><td></td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+
+            <!-- --------------- CIENTÍFICO - TECNOLÓGICO --------------- -->
+            <tr class="campo-row">
+              <td rowspan="7" class="campo-formacion">Científico - Tecnológico</td>
+              <td>Algoritmos y Resolución de Problemas</td>
+              <td></td><td>3</td><td>3</td><td></td><td></td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Matemática Aplicada a la Computación</td>
+              <td></td><td>3</td><td>3</td><td></td><td></td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Física (aplicada a electrónica / hardware)</td>
+              <td></td><td>3</td><td></td><td></td><td></td><td></td>
+              <td>3</td><td>72</td>
+            </tr>
+            <tr>
+              <td>Estadística y Metodología</td>
+              <td></td><td>2</td><td>2</td><td></td><td></td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+            <tr>
+              <td>Ética Profesional y Legislación TIC</td>
+              <td></td><td></td><td>2</td><td></td><td></td><td></td>
+              <td>2</td><td>48</td>
+            </tr>
+            <tr>
+              <td>Inglés Técnico Avanzado</td>
+              <td></td><td></td><td>2</td><td>2</td><td></td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+            <tr>
+              <td>Economía y Gestión de Proyectos</td>
+              <td></td><td></td><td>2</td><td>2</td><td></td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+
+            <!-- --------------- FORMACIÓN TÉCNICA ESPECÍFICA --------------- -->
+            <tr class="campo-row">
+              <td rowspan="14" class="campo-formacion">Formación Técnica Específica</td>
+              <td>Programación Estructurada</td>
+              <td></td><td></td><td>4</td><td>4</td><td></td><td></td>
+              <td>8</td><td>192</td>
+            </tr>
+            <tr>
+              <td>Programación Orientada a Objetos</td>
+              <td></td><td></td><td></td><td>4</td><td>4</td><td></td>
+              <td>8</td><td>192</td>
+            </tr>
+            <tr>
+              <td>Análisis de Sistemas</td>
+              <td></td><td></td><td>3</td><td>3</td><td></td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Base de Datos (Diseño y Administración)</td>
+              <td></td><td></td><td>3</td><td>3</td><td></td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Sistemas Operativos</td>
+              <td></td><td></td><td>3</td><td>3</td><td></td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Redes y Administración de Redes</td>
+              <td></td><td></td><td></td><td>4</td><td>4</td><td></td>
+              <td>8</td><td>192</td>
+            </tr>
+            <tr>
+              <td>Organización de las Computadoras / Arquitectura</td>
+              <td></td><td></td><td></td><td>3</td><td>3</td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Laboratorio de Software I (prácticas)</td>
+              <td></td><td></td><td>2</td><td>3</td><td></td><td></td>
+              <td>5</td><td>120</td>
+            </tr>
+            <tr>
+              <td>Laboratorio de Software II (proyectos)</td>
+              <td></td><td></td><td></td><td>3</td><td>4</td><td></td>
+              <td>7</td><td>168</td>
+            </tr>
+            <tr>
+              <td>Ingeniería de Software / Metodologías Ágiles</td>
+              <td></td><td></td><td></td><td>2</td><td>3</td><td></td>
+              <td>5</td><td>120</td>
+            </tr>
+            <tr>
+              <td>Seguridad Informática</td>
+              <td></td><td></td><td></td><td>2</td><td>3</td><td></td>
+              <td>5</td><td>120</td>
+            </tr>
+            <tr>
+              <td>Desarrollo Web y Mobile</td>
+              <td></td><td></td><td></td><td>3</td><td>3</td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Computación en la Nube y DevOps (introducción)</td>
+              <td></td><td></td><td></td><td></td><td>3</td><td></td>
+              <td>3</td><td>72</td>
+            </tr>
+            <tr>
+              <td>Inteligencia Artificial (Introducción / Práctica)</td>
+              <td></td><td></td><td></td><td></td><td>3</td><td></td>
+              <td>3</td><td>72</td>
+            </tr>
+
+            <!-- --------------- LABORATORIO / TALLER --------------- -->
+            <tr class="campo-row">
+              <td rowspan="5" class="campo-formacion">Laboratorio / Taller</td>
+              <td>Hardware y Montaje PC</td>
+              <td></td><td></td><td></td><td>2</td><td>2</td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+            <tr>
+              <td>Prácticas de Redes</td>
+              <td></td><td></td><td></td><td>2</td><td>3</td><td></td>
+              <td>5</td><td>120</td>
+            </tr>
+            <tr>
+              <td>Laboratorio de Sistemas Embebidos (intro)</td>
+              <td></td><td></td><td></td><td>2</td><td></td><td></td>
+              <td>2</td><td>48</td>
+            </tr>
+            <tr>
+              <td>Prácticas de Seguridad y Forense</td>
+              <td></td><td></td><td></td><td></td><td>2</td><td></td>
+              <td>2</td><td>48</td>
+            </tr>
+            <tr>
+              <td>Laboratorio de Base de Datos (práctica)</td>
+              <td></td><td></td><td></td><td>2</td><td>2</td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+
+            <!-- --------------- PROYECTUAL --------------- -->
+            <tr class="campo-row">
+              <td rowspan="4" class="campo-formacion">Proyectual</td>
+              <td>Proyecto Integrador I (Diseño y modelado)</td>
+              <td></td><td></td><td></td><td>3</td><td></td><td></td>
+              <td>3</td><td>72</td>
+            </tr>
+            <tr>
+              <td>Proyecto Integrador II (Implementación)</td>
+              <td></td><td></td><td></td><td></td><td>4</td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+            <tr>
+              <td>Práctica Profesionalizante Guiada</td>
+              <td></td><td></td><td></td><td></td><td>6</td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+            <tr>
+              <td>Trabajo Final de Especialidad (TFE)</td>
+              <td></td><td></td><td></td><td></td><td>6</td><td></td>
+              <td>6</td><td>144</td>
+            </tr>
+
+            <!-- --------------- GESTIÓN DE LA ESPECIALIDAD --------------- -->
+            <tr class="campo-row">
+              <td rowspan="3" class="campo-formacion">Gestión de la Especialidad</td>
+              <td>Gestión de Proyectos y Emprendimientos</td>
+              <td></td><td></td><td></td><td>2</td><td>2</td><td></td>
+              <td>4</td><td>96</td>
+            </tr>
+            <tr>
+              <td>Documentación Técnica y Calidad</td>
+              <td></td><td></td><td></td><td>2</td><td></td><td></td>
+              <td>2</td><td>48</td>
+            </tr>
+            <tr>
+              <td>Ética, Seguridad y Normativas</td>
+              <td></td><td></td><td></td><td>2</td><td></td><td></td>
+              <td>2</td><td>48</td>
+            </tr>
+
+            <!-- --------------- PRÁCTICAS PROFESIONALIZANTES (PP) --------------- -->
+            <tr class="campo-row">
+              <td class="campo-formacion">PP</td>
+              <td>Prácticas Profesionalizantes (Empresa / Taller)</td>
+              <td></td><td></td><td></td><td></td><td>9</td><td></td>
+              <td>9</td><td>216</td>
+            </tr>
+
+            <!-- --------------- TOTALES DE EJEMPLO --------------- -->
+            <tr class="totales-row">
+              <td colspan="2" style="text-align:right; font-weight:bold;">TOTAL UNIDADES CURRICULARES (ejemplo)</td>
+              <td>10</td><td>14</td><td>17</td><td>24</td><td>25</td><td>15</td>
+              <td></td><td></td>
+            </tr>
+            <tr class="totales-row">
+              <td colspan="2" style="text-align:right; font-weight:bold;">CANTIDAD DE HORAS CÁTEDRA POR AÑO (ejemplo)</td>
+              <td>36</td><td>36</td><td>38</td><td>40</td><td>42</td><td>30</td>
+              <td></td><td></td>
+            </tr>
+          </tbody>
         </table>
-    </div>
-</main>
+      </div>
+    </section>
+  </main>
 
-<footer>
+  <footer>
     <p>&copy; 2025 Escuela Técnica N°36 - Todos los derechos reservados</p>
-</footer>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
