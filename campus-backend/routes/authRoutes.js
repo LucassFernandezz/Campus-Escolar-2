@@ -3,6 +3,8 @@ const router = express.Router();
 const User = require('../models/User'); 
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const registrarAccion = require('../helpers/bitacora');
+
 
 // --- RUTA DE REGISTRO DE USUARIO ---
 router.post('/register', async (req, res) => {
@@ -50,6 +52,14 @@ router.post('/register', async (req, res) => {
         user.password = await bcrypt.hash(password, salt);
 
         await user.save();
+
+        // Registrar acción en la bitácora
+        await registrarAccion(
+            user._id, 
+            'Creó cuenta', 
+            `Nombre: ${user.nombre}, DNI: ${user.dni}`
+        );
+
 
         const payload = {
             user: {

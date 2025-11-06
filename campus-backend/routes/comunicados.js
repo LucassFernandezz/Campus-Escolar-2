@@ -4,6 +4,8 @@ const router = express.Router();
 const Comunicado = require('../models/Comunicado');
 const User = require('../models/User'); // Necesitamos el modelo User para verificar roles
 const auth = require('../middleware/auth'); // Middleware de autenticación
+const registrarAccion = require('../helpers/bitacora');
+
 
 // @route   POST /api/comunicados
 // @desc    Publicar un nuevo comunicado
@@ -27,6 +29,12 @@ router.post('/', auth, async (req, res) => {
         });
 
         const comunicado = await nuevoComunicado.save();
+        // Registrar acción en bitácora
+        await registrarAccion(
+            req.user.id, 
+            'Publicó comunicado', 
+            `Título: ${nuevoComunicado.titulo}, Destinatario: ${nuevoComunicado.rolDestinatario}`
+        );
         res.json(comunicado);
 
     } catch (err) {

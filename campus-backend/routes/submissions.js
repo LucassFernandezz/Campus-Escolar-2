@@ -6,6 +6,7 @@ const Submission = require('../models/Submission');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const registrarAccion = require('../helpers/bitacora');
 
 // Carpeta de uploads
 const UPLOAD_DIR = path.join(__dirname, '../uploads/submissions');
@@ -59,6 +60,11 @@ router.post('/', auth, upload.single('archivo'), async (req, res) => {
     }
 
     const saved = await nuevo.save();
+    // ----- Bitácora -----
+    let detalle = `Título: ${saved.titulo}, Tipo: ${saved.tipo}, Materia: ${saved.materia || 'N/A'}`;
+    if (saved.archivoAdjunto) detalle += `, Archivo: ${saved.archivoAdjunto}`;
+    await registrarAccion(req.user.id, 'Creó envío/mensaje', detalle);
+    // -------------------
     return res.status(201).json(saved);
 } catch (err) {
     console.error(err);
