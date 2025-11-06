@@ -1,0 +1,39 @@
+/* FAQ.css o dentro de <style> */
+.faq-main-container {
+    max-width: 900px; /* ancho máximo */
+    margin: 100px auto 50px auto; /* centrado horizontal, con margen superior e inferior */
+    text-align: left; /* si querés que el texto no quede centrado */
+}
+
+.faq-content h1 {
+    text-align: center; /* solo el título centrado */
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 15px; /* espacio entre acordeones */
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* ícono y texto alineados a la izquierda */
+    background-color: #e65100; 
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.accordion-header h2 {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.accordion-content {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    background-color: #f9f9f9;
+}
