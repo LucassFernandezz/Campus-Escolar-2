@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             try {
-                const response = await fetch('http://localhost:5000/api/comunicados', {
+                const response = await fetch('https://campus-backend-llfv.onrender.com/api/comunicados', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

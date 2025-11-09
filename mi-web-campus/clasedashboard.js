@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ---------- Función para cargar comunicados ----------
     async function cargarComunicados() {
         try {
-            const response = await fetch(`http://localhost:5000/api/comunicados?rol=${userRol}`, {
+            const response = await fetch(`https://campus-backend-llfv.onrender.com/api/comunicados?rol=${userRol}`, {
                 headers: { 'x-auth-token': token }
             });
             const comunicados = await response.json();
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             try {
-                const res = await fetch('http://localhost:5000/api/submissions', {
+                const res = await fetch('https://campus-backend-llfv.onrender.com/api/submissions', {
                     method: 'POST',
                     headers: { 'x-auth-token': token },
                     body: fd
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         async function cargarEnvios() {
             try {
-                const res = await fetch(`http://localhost:5000/api/submissions?materia=${encodeURIComponent(materia)}`, {
+                const res = await fetch(`https://campus-backend-llfv.onrender.com/api/submissions?materia=${encodeURIComponent(materia)}`, {
                     headers: { 'x-auth-token': token }
                 });
                 const envios = await res.json();
