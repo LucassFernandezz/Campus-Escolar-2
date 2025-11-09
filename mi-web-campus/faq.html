@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus ET36 - Sección de Ayuda</title>
+    <title data-i18n="faq.title">Campus ET36 - Sección de Ayuda</title>
     <link rel="stylesheet" href="faq.css">
     <link rel="stylesheet" href="estilos.css">
-    
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -15,49 +14,49 @@
         <nav class="navbar">
             <a href="index.html" class="logo-link">
                 <div class="logo">
-                    <img src="./imagenes/LogoET36.png" alt="Campus ET36 Logo">
-                    <span>Campus ET36</span>
+                    <img src="./imagenes/LogoET36.png" alt="Campus ET36 Logo" data-i18n="logo_alt">
+                    <span data-i18n="logo_text">Campus ET36</span>
                 </div>
             </a>
             <!-- Botón hamburguesa para móvil -->
-            <button class="hamburger" aria-label="Abrir menú">
+            <button class="hamburger" aria-label="Abrir menú" data-i18n="menu_abrir">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <ul class="nav-links">
-                <li><a href="inicioRegistro.html">Iniciar/Registrarse sesión</a></li>
-                <li><a href="especialidades.html">Especialidades</a></li>
-                <li><a href="inscripciones.html">Inscripciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><button class="lang-btn">🌐</button></li> <!-- Botón de idioma -->
+                <li><a href="inicioRegistro.html" data-i18n="nav_inicio">Iniciar/Registrarse sesión</a></li>
+                <li><a href="especialidades.html" data-i18n="nav_especialidades">Especialidades</a></li>
+                <li><a href="inscripciones.html" data-i18n="nav_inscripciones">Inscripciones</a></li>
+                <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+                <li><button class="lang-btn" data-i18n="nav_idioma">🌐</button></li>
             </ul>
         </nav>
     </header>
 
 <main class="faq-main-container padding-for-fixed-header">
     <section class="faq-content">
-        <h1>Sección de Ayuda - Preguntas Frecuentes</h1>
+        <h1 data-i18n="faq.heading">Sección de Ayuda - Preguntas Frecuentes</h1>
 
         <!-- Sección 1 -->
         <div class="accordion-item">
             <div class="accordion-header">
                 <span class="material-icons accordion-icon">keyboard_arrow_down</span>
-                <h2>🧩 Uso general del sistema</h2>
+                <h2 data-i18n="faq.section1.title">🧩 Uso general del sistema</h2>
             </div>
             <div class="accordion-content">
-                <p><strong>¿Cómo iniciar sesión?</strong><br>
-                Ingrese su usuario y contraseña en la página de inicio. Si aún no tiene cuenta, registrese primero.</p>
+                <p><strong data-i18n="faq.section1.q1">¿Cómo iniciar sesión?</strong><br>
+                <span data-i18n="faq.section1.a1">Ingrese su usuario y contraseña en la página de inicio. Si aún no tiene cuenta, regístrese primero.</span></p>
 
-                <p><strong>¿Qué hacer si olvidé mi contraseña?</strong><br>
-                Utilice el enlace "Olvidé mi contraseña" en la página de inicio y siga los pasos indicados. Si el problema persiste, contacte al soporte.</p>
+                <p><strong data-i18n="faq.section1.q2">¿Qué hacer si olvidé mi contraseña?</strong><br>
+                <span data-i18n="faq.section1.a2">Utilice el enlace "Olvidé mi contraseña" en la página de inicio y siga los pasos indicados. Si el problema persiste, contacte al soporte.</span></p>
 
-                <p><strong>¿Qué roles existen y qué puede hacer cada uno?</strong><br>
-                Los roles son: estudiante, profesor, directivo y administrador de sitio. Cada rol tiene permisos específicos, por ejemplo: estudiantes pueden subir tareas, profesores pueden crear comunicados, etc.</p>
+                <p><strong data-i18n="faq.section1.q3">¿Qué roles existen y qué puede hacer cada uno?</strong><br>
+                <span data-i18n="faq.section1.a3">Los roles son: estudiante, profesor, directivo y administrador de sitio. Cada rol tiene permisos específicos, por ejemplo: estudiantes pueden subir tareas, profesores pueden crear comunicados, etc.</span></p>
 
-                <p><strong>¿Cómo actualizar mis datos personales?</strong><br>
-                Ingrese a su perfil desde el menú superior y edite los campos correspondientes. Luego guarde los cambios.</p>
+                <p><strong data-i18n="faq.section1.q4">¿Cómo actualizar mis datos personales?</strong><br>
+                <span data-i18n="faq.section1.a4">Ingrese a su perfil desde el menú superior y edite los campos correspondientes. Luego guarde los cambios.</span></p>
             </div>
         </div>
 
@@ -65,11 +64,11 @@
         <div class="accordion-item">
             <div class="accordion-header">
                 <span class="material-icons accordion-icon">keyboard_arrow_down</span>
-                <h2>📝 Comunicados</h2>
+                <h2 data-i18n="faq.section2.title">📝 Comunicados</h2>
             </div>
             <div class="accordion-content">
-                <p><strong>¿Cómo ver los comunicados?</strong><br>
-                Ingrese a la sección "Comunicados" desde el menú principal. Los comunicados se muestran según su rol y curso.</p>
+                <p><strong data-i18n="faq.section2.q1">¿Cómo ver los comunicados?</strong><br>
+                <span data-i18n="faq.section2.a1">Ingrese a la sección "Comunicados" desde el menú principal. Los comunicados se muestran según su rol y curso.</span></p>
             </div>
         </div>
 
@@ -77,17 +76,17 @@
         <div class="accordion-item">
             <div class="accordion-header">
                 <span class="material-icons accordion-icon">keyboard_arrow_down</span>
-                <h2>🗂️ Subida de archivos / Entregas (rol estudiante)</h2>
+                <h2 data-i18n="faq.section3.title">🗂️ Subida de archivos / Entregas (rol estudiante)</h2>
             </div>
             <div class="accordion-content">
-                <p><strong>¿Cómo subir mi trabajo?</strong><br>
-                Vaya a la sección "Submissions" y utilice el botón "Subir archivo".</p>
+                <p><strong data-i18n="faq.section3.q1">¿Cómo subir mi trabajo?</strong><br>
+                <span data-i18n="faq.section3.a1">Vaya a la sección "Submissions" y utilice el botón "Subir archivo".</span></p>
 
-                <p><strong>¿Qué formatos acepta el sistema?</strong><br>
-                Se aceptan archivos PDF, DOC, DOCX, PPT, PPTX, ZIP, PNG, JPG y JPEG.</p>
+                <p><strong data-i18n="faq.section3.q2">¿Qué formatos acepta el sistema?</strong><br>
+                <span data-i18n="faq.section3.a2">Se aceptan archivos PDF, DOC, DOCX, PPT, PPTX, ZIP, PNG, JPG y JPEG.</span></p>
 
-                <p><strong>¿Puedo borrar o reemplazar un archivo?</strong><br>
-                No, las acciones de borrar o editar manualmente no se registran y no están permitidas desde la página. Contacte al profesor si necesita asistencia.</p>
+                <p><strong data-i18n="faq.section3.q3">¿Puedo borrar o reemplazar un archivo?</strong><br>
+                <span data-i18n="faq.section3.a3">No, las acciones de borrar o editar manualmente no se registran y no están permitidas desde la página. Contacte al profesor si necesita asistencia.</span></p>
             </div>
         </div>
 
@@ -95,17 +94,17 @@
         <div class="accordion-item">
             <div class="accordion-header">
                 <span class="material-icons accordion-icon">keyboard_arrow_down</span>
-                <h2>📚 Administración (docentes / admins)</h2>
+                <h2 data-i18n="faq.section4.title">📚 Administración (docentes / admins)</h2>
             </div>
             <div class="accordion-content">
-                <p><strong>¿Cómo crear un nuevo usuario?</strong><br>
-                Ingrese a la sección "Usuarios" y haga clic en "Crear nuevo usuario". Complete los datos requeridos y guarde.</p>
+                <p><strong data-i18n="faq.section4.q1">¿Cómo crear un nuevo usuario?</strong><br>
+                <span data-i18n="faq.section4.a1">Ingrese a la sección "Usuarios" y haga clic en "Crear nuevo usuario". Complete los datos requeridos y guarde.</span></p>
 
-                <p><strong>¿Cómo enviar un comunicado a un curso?</strong><br>
-                Vaya a "Comunicados", seleccione "Nuevo comunicado", complete título, contenido y destinatario, luego envíe.</p>
+                <p><strong data-i18n="faq.section4.q2">¿Cómo enviar un comunicado a un curso?</strong><br>
+                <span data-i18n="faq.section4.a2">Vaya a "Comunicados", seleccione "Nuevo comunicado", complete título, contenido y destinatario, luego envíe.</span></p>
 
-                <p><strong>¿Qué es la bitácora y cómo funciona?</strong><br>
-                La bitácora registra las acciones importantes realizadas por los usuarios, como crear comunicados o subir archivos. No registra eliminaciones manuales en la base de datos.</p>
+                <p><strong data-i18n="faq.section4.q3">¿Qué es la bitácora y cómo funciona?</strong><br>
+                <span data-i18n="faq.section4.a3">La bitácora registra las acciones importantes realizadas por los usuarios, como crear comunicados o subir archivos. No registra eliminaciones manuales en la base de datos.</span></p>
             </div>
         </div>
 
@@ -113,18 +112,17 @@
         <div class="accordion-item">
             <div class="accordion-header">
                 <span class="material-icons accordion-icon">keyboard_arrow_down</span>
-                <h2>🛠️ Solución de problemas</h2>
+                <h2 data-i18n="faq.section5.title">🛠️ Solución de problemas</h2>
             </div>
             <div class="accordion-content">
-                <p>Si encuentra problemas no listados aquí, contacte a <a href="mailto:soporteet36@gmail.com">soporteet36@gmail.com</a> o comuníquese con un directivo de su escuela.</p>
+                <p data-i18n="faq.section5.text">Si encuentra problemas no listados aquí, contacte a <a href="mailto:soporteet36@gmail.com">soporteet36@gmail.com</a> o comuníquese con un directivo de su escuela.</p>
             </div>
         </div>
-
     </section>
 </main>
 
 <footer>
-    <p>&copy; 2025 Escuela Técnica N°36 - Todos los derechos reservados</p>
+    <p data-i18n="footer_derechos">&copy; 2025 Escuela Técnica N°36 - Todos los derechos reservados</p>
 </footer>
 
 <script src="script.js"></script>

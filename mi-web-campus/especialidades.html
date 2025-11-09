@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus ET36 - Especialidades</title>
+    <title data-i18n="page_title_especialidades">Campus ET36 - Especialidades</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="favicon.ico">
-    </head>
+</head>
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="logo-link">
                 <div class="logo">
-                    <img src="./imagenes/LogoET36.png" alt="Campus ET36 Logo">
-                    <span>Campus ET36</span>
+                    <img src="./imagenes/LogoET36.png" alt="Campus ET36 Logo" data-i18n="logo_alt">
+                    <span data-i18n="logo_text">Campus ET36</span>
                 </div>
             </a>
             <!-- Botón hamburguesa para móvil -->
-            <button class="hamburger" aria-label="Abrir menú">
+            <button class="hamburger" aria-label="Abrir menú" data-i18n="menu_abrir">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
             <ul class="nav-links">
-                <li><a href="inicioRegistro.html">Iniciar/Registrarse sesión</a></li>
-                <li><a href="especialidades.html">Especialidades</a></li>
-                <li><a href="inscripciones.html">Inscripciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><button class="lang-btn">🌐</button></li> <!-- Botón de idioma -->
+                <li><a href="inicioRegistro.html" data-i18n="nav_inicio">Iniciar/Registrarse sesión</a></li>
+                <li><a href="especialidades.html" data-i18n="nav_especialidades">Especialidades</a></li>
+                <li><a href="inscripciones.html" data-i18n="nav_inscripciones">Inscripciones</a></li>
+                <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+                <li><button class="lang-btn" data-i18n="nav_idioma">🌐</button></li>
             </ul>
         </nav>
     </header>
@@ -38,26 +38,27 @@
             <div class="especialidad-card">
                 <a href="especialidadComputacion.html" class="especialidad-link">
                     <div class="card-image">
-                        <img src="imagenes/TEC-Imagen.png" alt="Técnico en Computación" class="main-specialty-image">
+                        <img src="imagenes/TEC-Imagen.png" alt="Técnico en Computación" class="main-specialty-image" data-i18n="especialidad_computacion_alt">
                     </div>
-                    <h2 class="card-title">Técnico en Computación</h2>
+                    <h2 class="card-title" data-i18n="especialidad_computacion_titulo">Técnico en Computación</h2>
                 </a>
             </div>
 
             <div class="especialidad-card">
                 <a href="nuevoDashboarMateriasMmo.html" class="especialidad-link">
                     <div class="card-image">
-                        <img src="imagenes/MMO-Imagen.jpg" alt="Maestro Mayor de Obra" class="main-specialty-image">
+                        <img src="imagenes/MMO-Imagen.jpg" alt="Maestro Mayor de Obra" class="main-specialty-image" data-i18n="especialidad_mmo_alt">
                     </div>
-                    <h2 class="card-title">Maestro Mayor de Obra</h2>
+                    <h2 class="card-title" data-i18n="especialidad_mmo_titulo">Maestro Mayor de Obra</h2>
                 </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Escuela Técnica N°36 - Todos los derechos reservados</p>
+        <p data-i18n="footer_derechos">&copy; 2025 Escuela Técnica N°36 - Todos los derechos reservados</p>
     </footer>
 
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>

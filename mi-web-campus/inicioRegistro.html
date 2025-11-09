@@ -1,112 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar/Registrarse - Campus ET36</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo-link">
-                <div class="logo">
-                    <img src="./imagenes/LogoET36.png" alt="Campus ET36 Logo">
-                    <span>Campus ET36</span>
-                </div>
-            </a>
-            <!-- Botón hamburguesa para móvil -->
-            <button class="hamburger" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            
-            <ul class="nav-links">
-                <li><a href="inicioRegistro.html">Iniciar/Registrarse sesión</a></li>
-                <li><a href="especialidades.html">Especialidades</a></li>
-                <li><a href="inscripciones.html">Inscripciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><button class="lang-btn">🌐</button></li> <!-- Botón de idioma -->
-            </ul>
-        </nav>
-    </header>
-                
-                <main class="auth-container">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <h2>Inicia sesión en CampusET36</h2>
-                                <div id="message" style="margin-bottom: 10px; text-align: center;"></div> 
-                                <form id="loginForm">
-                                    <div class="input-group">
-                                        <span class="material-icons">mail</span>
-                                        <input type="email" id="login-email" placeholder="correo electrónico" required>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="material-icons password-toggle-icon" data-target="login-password">visibility</span>
-                                        <input type="password" id="login-password" placeholder="contraseña" required>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="material-icons password-toggle-icon" data-target="login-code">visibility</span>
-                                        <input type="password" id="login-code" placeholder="código de alumno/profesor" required>
-                                    </div>
-                                    <button type="submit" class="btn-primary">Iniciar</button>
-                                </form>
-                                <p class="switch-form-text">¿No tienes cuenta? <a href="#" id="showRegister">Regístrate</a></p>
-                            </div>
-                            
-                            <div class="flip-card-back">
-                                <h2>Regístrate en CampusET36</h2>
-                                <div id="message-register" style="margin-bottom: 10px; text-align: center;"></div>
-                                <form id="registerForm">
-                                    <div class="input-group">
-                                        <span class="material-icons">person</span> <input type="text" id="register-name" placeholder="nombre completo" required>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="material-icons">mail</span>
-                                        <input type="email" id="register-email" placeholder="correo electrónico" required>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="material-icons password-toggle-icon" data-target="register-password">visibility</span>
-                                        <input type="password" id="register-password" placeholder="contraseña" required>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="material-icons password-toggle-icon" data-target="register-confirm-password">visibility</span>
-                                        <input type="password" id="register-confirm-password" placeholder="confirmar contraseña" required>
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="material-icons">credit_card</span>
-                                        <input type="text" id="register-dni" placeholder="DNI (Sin puntos)" required pattern="\d{8}" title="Ingrese 8 dígitos numéricos">
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="material-icons">assignment_ind</span> <select id="register-rol" name="rol" required>
-                                            <option value="" disabled selected>Selecciona tu rol</option>
-                                            <option value="estudiante">Estudiante</option>
-                                            <option value="profesor">Profesor</option>
-                                            <option value="familia">Familia</option>
-                                        </select>
-                                    </div>
-                                    <div class="input-group" id="codigo-alumno-group">
-                                        <span class="material-icons password-toggle-icon" data-target="register-codigo-alumno">visibility</span>
-                                        <input type="password" id="register-codigo-alumno" placeholder="código de alumno" required>
-                                    </div>
-                                    <button type="submit" class="btn-primary">Crear</button>
-                                </form>
-                                <p class="switch-form-text">¿Ya tienes cuenta? <a href="#" id="showLogin">Inicia sesión</a></p>
-                            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title data-i18n="auth.title">Iniciar/Registrarse - Campus ET36</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
 
-                        </div>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo-link">
+                    <div class="logo">
+                        <img src="./imagenes/LogoET36.png" alt="Campus ET36 Logo">
+                        <span>Campus ET36</span>
                     </div>
-                </main>
-                
-                <footer>
-                    <p>&copy; 2025 Escuela Técnica N°36 - Todos los derechos reservados</p>
-                </footer>
+                </a>
+                <button class="hamburger" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="inicioRegistro.html" data-i18n="nav_inicio">Iniciar/Registrarse sesión</a></li>
+                    <li><a href="especialidades.html" data-i18n="nav_especialidades">Especialidades</a></li>
+                    <li><a href="inscripciones.html" data-i18n="nav_inscripciones">Inscripciones</a></li>
+                    <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+                    <li><button class="lang-btn" aria-label="Cambiar idioma">🌐</button></li>
+                </ul>
+            </nav>
+        </header>
 
-                <script src="script.js"></script>
-                <script src="./js/auth.js"></script>
-</body>
+        <main class="auth-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <!-- FRONT: Login -->
+                    <div class="flip-card-front">
+                        <h2 data-i18n="auth.login.title">Inicia sesión en CampusET36</h2>
+                        <div id="message" style="margin-bottom: 10px; text-align: center;"></div>
+                        <form id="loginForm">
+                            <div class="input-group">
+                                <span class="material-icons">mail</span>
+                                <input type="email" id="login-email" placeholder="correo electrónico" data-i18n-placeholder="auth.login.email" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="material-icons password-toggle-icon" data-target="login-password">visibility</span>
+                                <input type="password" id="login-password" placeholder="contraseña" data-i18n-placeholder="auth.login.password" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="material-icons password-toggle-icon" data-target="login-code">visibility</span>
+                                <input type="password" id="login-code" placeholder="código de alumno/profesor" data-i18n-placeholder="auth.login.code" required>
+                            </div>
+                            <button type="submit" class="btn-primary" data-i18n="auth.login.button">Iniciar</button>
+                        </form>
+                        <p class="switch-form-text">
+                            <span data-i18n="auth.login.noAccount">¿No tienes cuenta?</span>
+                            <a href="#" id="showRegister" data-i18n="auth.login.registerLink">Regístrate</a>
+                        </p>
+                    </div>
+
+                    <!-- BACK: Register -->
+                    <div class="flip-card-back">
+                        <h2 data-i18n="auth.register.title">Regístrate en CampusET36</h2>
+                        <div id="message-register" style="margin-bottom: 10px; text-align: center;"></div>
+                        <form id="registerForm">
+                            <div class="input-group">
+                                <span class="material-icons">person</span>
+                                <input type="text" id="register-name" placeholder="nombre completo" data-i18n-placeholder="auth.register.name" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="material-icons">mail</span>
+                                <input type="email" id="register-email" placeholder="correo electrónico" data-i18n-placeholder="auth.register.email" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="material-icons password-toggle-icon" data-target="register-password">visibility</span>
+                                <input type="password" id="register-password" placeholder="contraseña" data-i18n-placeholder="auth.register.password" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="material-icons password-toggle-icon" data-target="register-confirm-password">visibility</span>
+                                <input type="password" id="register-confirm-password" placeholder="confirmar contraseña" data-i18n-placeholder="auth.register.confirm" required>
+                            </div>
+                            <div class="input-group">
+                                <span class="material-icons">credit_card</span>
+                                <input type="text" id="register-dni" placeholder="DNI (Sin puntos)" data-i18n-placeholder="auth.register.dni" required pattern="\d{8}" title="Ingrese 8 dígitos numéricos">
+                            </div>
+                            <div class="input-group">
+                                <span class="material-icons">assignment_ind</span>
+                                <select id="register-rol" name="rol" required>
+                                    <option value="" disabled selected data-i18n="auth.register.selectRole">Selecciona tu rol</option>
+                                    <option value="estudiante" data-i18n="auth.register.roleStudent">Estudiante</option>
+                                    <option value="profesor" data-i18n="auth.register.roleTeacher">Profesor</option>
+                                    <option value="familia" data-i18n="auth.register.roleFamily">Familia</option>
+                                </select>
+                            </div>
+                            <div class="input-group" id="codigo-alumno-group">
+                                <span class="material-icons password-toggle-icon" data-target="register-codigo-alumno">visibility</span>
+                                <input type="password" id="register-codigo-alumno" placeholder="código de alumno" data-i18n-placeholder="auth.register.studentCode" required>
+                            </div>
+                            <button type="submit" class="btn-primary" data-i18n="auth.register.button">Crear</button>
+                        </form>
+                        <p class="switch-form-text">
+                            <span data-i18n="auth.register.hasAccount">¿Ya tienes cuenta?</span>
+                            <a href="#" id="showLogin" data-i18n="auth.register.loginLink">Inicia sesión</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p data-i18n="footer_derechos">&copy; 2025 Escuela Técnica N°36 - Todos los derechos reservados</p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="i18n.js"></script>
+        <script src="./js/auth.js"></script>
+    </body>
 </html>

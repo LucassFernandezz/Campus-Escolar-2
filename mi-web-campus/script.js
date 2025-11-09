@@ -96,4 +96,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ====================
+    // Multilenguaje
+    // ====================
+    const langBtn = document.querySelector('.lang-btn');
+    let currentLang = localStorage.getItem('lang') || 'es'; // recordar idioma
+
+    function loadLanguage(lang) {
+        fetch(`lang/${lang}.json`)
+            .then(res => res.json())
+            .then(data => {
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.dataset.i18n;
+                    if (data[key]) el.textContent = data[key];
+                });
+                currentLang = lang;
+                localStorage.setItem('lang', lang);
+            });
+    }
+
+    // Inicializar idioma al cargar página
+    loadLanguage(currentLang);
+
+    // Cambiar idioma al hacer click
+    if (langBtn) {
+        langBtn.addEventListener('click', () => {
+            const newLang = currentLang === 'es' ? 'en' : 'es';
+            loadLanguage(newLang);
+        });
+    }
+
+
 });
