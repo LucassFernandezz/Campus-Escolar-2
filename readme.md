@@ -1,7 +1,7 @@
 # Campus ET36 – Plataforma Escolar
 ---
 Lucas Fernandez
-Mirki Dolinski
+Mirko Dolinski
 Thiago Cabello
 Lucas Ciardini
 
