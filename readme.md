@@ -5,9 +5,9 @@
 - Mirko Dolinski 
 - Lucas Ciardini
 
-Profesor: Jackson Daniel Calderon Vargas
-Materia: Desarrollo de Sistemas
-Proyecto Integrador – 2025
+- Profesor: Jackson Daniel Calderon Vargas
+- Materia: Desarrollo de Sistemas
+- Proyecto Integrador – 2025
 
 ## Descripción del proyecto
 ---
