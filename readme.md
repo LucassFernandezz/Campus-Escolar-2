@@ -1,9 +1,9 @@
 # Campus ET36 – Plataforma Escolar
 ---
-Lucas Fernandez
-Mirko Dolinski
-Thiago Cabello
-Lucas Ciardini
+- Lucas Fernandez
+- Thiago Cabello
+- Mirko Dolinski 
+- Lucas Ciardini
 
 Profesor: Jackson Daniel Calderon Vargas
 Materia: Desarrollo de Sistemas
